@@ -94,6 +94,21 @@ body {
   white-space: nowrap;
 }
 
+/* Componente Media (Reseñas / Comentarios) */
+.media {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.media img {
+  width: 60px;
+  height: 60px;
+}
+
 /* Formulario armónico */
 .form-container {
   background-color: #ffffff;
@@ -136,4 +151,5 @@ body {
 
 .head { background: yellow; padding: 40px 0; }
 .foot { background: yellow; padding: 20px 0; }
+.card-hotel { padding: 15px; }
 .btn-reserva { width: 100%; }
