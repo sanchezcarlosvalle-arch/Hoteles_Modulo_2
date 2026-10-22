@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contacto y Suscripción - Guía Hoteles</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- Open Iconic CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-iconic@1.1.1/font/css/open-iconic-bootstrap.min.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegación fija y responsive -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="oi oi-map-marker mr-2 text-info" aria-hidden="true"></span>
+        Guía Hoteles
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHoteles" aria-controls="navbarHoteles" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarHoteles">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><span class="oi oi-home mr-1"></span> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html"><span class="oi oi-people mr-1"></span> Nosotros</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contacto.html"><span class="oi oi-envelope-closed mr-1"></span> Contacto & Suscripción <span class="sr-only">(actual)</span></a>
+          </li>
+        </ul>
+        <span class="navbar-text text-light small d-none d-lg-inline">
+          <span class="oi oi-phone mr-1 text-success"></span> +549111234567
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="head">
+    <div class="container">
+      <h1>Hoteles</h1>
+    </div>
+  </header>
+
+  <main class="container my-4">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><span class="oi oi-home mr-1"></span> Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span class="oi oi-envelope-closed mr-1"></span> Contacto & Suscripción</li>
+      </ol>
+    </nav>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+
+        <div class="form-container">
+          <div class="mb-4 text-center">
+            <h1 class="h3 font-weight-bold text-dark">Formulario de Contacto y Suscripción</h1>
+            <p class="text-muted">Completá tus datos para realizar la reserva o suscribirte a nuestras promociones exclusivas.</p>
+          </div>
+
+          <!-- Formulario armónico con labels agrupados y los controles requeridos -->
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Gracias! Tu mensaje ha sido enviado exitosamente.');">
+
+            <!-- Fila con Texto (Nombre) y Email -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="nombreCompleto"><span class="oi oi-person mr-1 text-primary"></span> Nombre y Apellido:</label>
+                <input type="text" class="form-control" id="nombreCompleto" placeholder="Ej: Kevin Rodríguez" required>
+                <small class="form-text text-muted">Ingresá tu nombre completo tal como figura en tu documento.</small>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="correoElectronico"><span class="oi oi-envelope-closed mr-1 text-primary"></span> Correo Electrónico:</label>
+                <input type="email" class="form-control" id="correoElectronico" placeholder="usuario@correo.com" required>
+                <small class="form-text text-muted">No compartiremos tu email con nadie más.</small>
+              </div>
+            </div>
+
+            <!-- Campo de Listado Seleccionable (Select) -->
+            <div class="form-group">
+              <label for="motivoContacto"><span class="oi oi-list mr-1 text-primary"></span> Motivo de Consulta o Servicio:</label>
+              <select class="form-control" id="motivoContacto" required>
+                <option value="" selected disabled>Seleccioná una opción...</option>
+                <option value="1">Reserva de Hoteles</option>
+                <option value="2">Consulta sobre Ciudades Disponibles</option>
+                <option value="3">Suscripción al Boletín de Ofertas y Novedades</option>
+                <option value="4">Preguntas sobre Precios y Formas de Pago</option>
+                <option value="5">Otro Asunto</option>
+              </select>
+            </div>
+
+            <!-- Campo de Textarea -->
+            <div class="form-group">
+              <label for="mensajeComentario"><span class="oi oi-comment-square mr-1 text-primary"></span> Mensaje o Comentario:</label>
+              <textarea class="form-control" id="mensajeComentario" rows="5" placeholder="Escribí aquí tu mensaje, duda o solicitud detallada..." required></textarea>
+            </div>
+
+            <!-- Campo de Checkbox (Suscripción y Términos) -->
+            <div class="form-group">
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="checkSuscripcion" checked>
+                <label class="form-check-label" for="checkSuscripcion">
+                  Deseo suscribirme al boletín mensual de ofertas y novedades de hoteles.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkTerminos" required>
+                <label class="form-check-label" for="checkTerminos">
+                  Acepto los términos y condiciones de privacidad del sitio web.
+                </label>
+              </div>
+            </div>
+
+            <!-- Botones armónicos -->
+            <div class="form-group mt-4 d-flex justify-content-between align-items-center">
+              <button type="reset" class="btn btn-outline-secondary">
+                <span class="oi oi-trash mr-1"></span> Limpiar Campos
+              </button>
+              <button type="submit" class="btn btn-primary px-4">
+                <span class="oi oi-circle-check mr-1"></span> Enviar Consulta
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer con alineaciones requeridas (izquierda, centro, derecha) y etiqueta <address> -->
+  <footer class="footer foot py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-12 col-md-4 text-left mb-3 mb-md-0">
+          <h5>Oficina central</h5>
+          <address class="mb-0">
+            <strong>Guía Hoteles</strong><br>
+            Tucuman 834, CABA, Argentina<br>
+            <abbr title="Teléfono">Tel:</abbr> +549111234567<br>
+            <a href="mailto:contacto@guiahoteles.com">contacto@guiahoteles.com</a>
+          </address>
+        </div>
+
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+          <h5>Redes y Comunidad</h5>
+          <p class="mb-2 text-muted">Conectate con nosotros:</p>
+          <a href="https://facebook.com" class="d-block" target="_blank" rel="noopener"><span class="oi oi-globe mr-1"></span> Facebook</a>
+          <p class="mb-1">Twitter</p>
+          <a href="https://instagram.com" class="d-block" target="_blank" rel="noopener"><span class="oi oi-camera-slr mr-1"></span> Instagram</a>
+          <p class="mb-0">Google+</p>
+        </div>
+
+        <div class="col-12 col-md-4 text-right">
+          <h5>Sobre el Sitio</h5>
+          <p class="mb-1">Proyecto Práctico - Módulo 2</p>
+          <p class="mb-1"><a href="nosotros.html">Nosotros</a></p>
+          <p class="mb-1">Precios</p>
+          <p class="mb-1">Términos y condiciones</p>
+          <p class="mb-0"><a href="contacto.html">Contacto</a></p>
+          <small class="text-muted">&copy; 2026 Guía Hoteles. Todos los derechos reservados.</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

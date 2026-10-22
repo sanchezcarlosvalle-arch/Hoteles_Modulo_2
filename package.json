@@ -1,0 +1,31 @@
+{
+  "name": "hoteles_guia",
+  "version": "1.0.0",
+  "description": "Proyecto Modulo 2 - Componentes CSS de Bootstrap",
+  "homepage": "https://bitbucket.org/otiliaro2002/hoteles_guia#readme",
+  "bugs": {
+    "url": "https://bitbucket.org/otiliaro2002/hoteles_guia/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://otiliaro2002-admin@bitbucket.org/otiliaro2002/hoteles_guia.git"
+  },
+  "license": "ISC",
+  "author": "Osmany Sanchez",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.5.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
